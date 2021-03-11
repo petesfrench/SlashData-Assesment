@@ -1,5 +1,11 @@
 const solveNgram = (req, res) => {
-    let { body, ngram = 1, case_sensitive = true, length = 100 } = req.body;
+    let { body, ngram, case_sensitive, length } = req.body;
+    if (ngram !== '') ngram = Number(ngram);
+    else ngram = 1;
+    if (length !== '') length = Number(length);
+    else length = 100;
+    if (case_sensitive === 'true') case_sensitive = true;
+    else case_sensitive = false;
     let holder = {};
     let currNgram;
     let targetBody = body.slice();

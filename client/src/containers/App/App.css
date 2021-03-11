@@ -1,1 +1,11 @@
+.page-container {
+    height: 100vh;
+}
+.graph-table-container {
+    height: 40vh;
+}
 
+.form-container {
+    height: 50vh;
+    padding-top: 10vh;
+}
