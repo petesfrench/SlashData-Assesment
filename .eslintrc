@@ -22,7 +22,7 @@
       }
     },
     "rules": {
-      "indent": ["error", 2],
+      "indent": ["error", 4],
       "keyword-spacing": "error",
       "linebreak-style": ["error", "unix"],
       "no-undef": 0,
